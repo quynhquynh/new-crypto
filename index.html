@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptocurrency Coins</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <input type="text">
+        <input type="submit" value="Search">
+    </form>
+    <button id="load">Load more</button>
+    <p id="amount"></p>
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortName('name')">Coin</th>
+                <th onclick="sortNumber('rank')">Rank</th>
+                <th onclick="sortNumber('price_usd')">Price in USD</th>
+                <th onclick="sortNumber('percent_change_1h')">Change in price</th>
+            </tr>
+        </thead>
+        <tbody id="info">
+        </tbody>
+    </table>
+
+    <script src="data.json"></script>
+    <script src="newApp.js"></script>
+</body>
+</html>
